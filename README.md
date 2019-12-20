@@ -1,2 +1,6 @@
 # arch_city_volleyball
-Arch City Volleyball app
+
+## Running The Client
+
+$ cd www
+$ npm run serve
