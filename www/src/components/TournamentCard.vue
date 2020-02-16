@@ -9,27 +9,35 @@
     <v-sheet class="offWhite" dark tile>
       <div><v-img 
         src="@/assets/acvbLogo1.png"
-        height="225px"
-        width="400px"
+        min-height="225px"
+        min-width="400px"
         aspect-ratio="1.778"
       >
       </v-img>
     </div>
-    <v-row>
-      <v-col class="text-center">
-        <v-chip class="darkGray">COED</v-chip>
-      </v-col>
-      <v-col class="text-center">
-        <v-chip class="darkGray">A/BB/B</v-chip>
-      </v-col>
-      <v-col class="text-center">
-        <v-chip class="darkGray">Shorties</v-chip>
-      </v-col>
-    </v-row>
+    <v-container>
+      <v-row class="pa-5 ma-0" align="center" justify="center" dense>
+        <v-col class="pa-1 text-center">
+          <v-chip class="darkGray">Coed</v-chip>
+        </v-col>
+        <v-col class="pa-1 text-center">
+          <v-chip class="darkGray">A/BB/B</v-chip>
+        </v-col>
+        <v-col class="pa-1 text-center">
+          <v-chip class="darkGray">Shorties</v-chip>
+        </v-col>
+        <v-col class="pa-1 text-center">
+          <v-chip class="darkGray">$170 Per Team</v-chip>
+        </v-col>
+        <v-col class="pa-1 text-center">
+          <v-chip class="darkGray">$170 Per Team</v-chip>
+        </v-col>
+      </v-row>
+    </v-container>
     <v-divider light></v-divider>
     <v-row class="pa-0" justify="center" align="center">
       <v-col class="text-center">
-        <v-btn color="secondary">Sign Up</v-btn>
+        <v-btn color="secondary" to="/tournamentSignUp">Sign Up</v-btn>
       </v-col>
     </v-row>
   </v-sheet>
@@ -45,3 +53,5 @@ export default Vue.extend({
   })
 });
 </script>
+
+

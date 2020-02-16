@@ -10,6 +10,14 @@
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
+            <v-list-item-title>Log In</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -53,6 +61,7 @@
       <v-toolbar-title>Arch City Volleyball</v-toolbar-title>
       <template v-slot:extension>
         <v-tabs
+          class="d-sm-none d-md-block"
           align-with-title
           color="accent"
         >
@@ -60,6 +69,7 @@
           <v-tab to="/tournaments">Tournaments</v-tab>
           <v-tab to="/freeAgent">Free Agent Sign Up</v-tab>
           <v-tab to="/pickup">Pick-Up Play</v-tab>
+          <v-tab to="/login" @click="login">Login</v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
@@ -83,6 +93,20 @@ export default Vue.extend({
   name: "App",
   props: {
     source: String,
+  },
+  methods: {
+    // Log the user in
+    login() {
+      // @ts-ignore
+      this.$auth.loginWithRedirect();
+    },
+    // Log the user out
+    logout() {
+      // @ts-ignore
+      this.$auth.logout({
+        returnTo: window.location.origin
+      });
+    }
   },
   data: () => ({
     drawer: false,

@@ -1,7 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Tournaments from "../views/Tournaments.vue"
+import Tournaments from "../views/Tournaments.vue";
+import TournamentSignUp from "../views/TournamentSignUp.vue";
 
 Vue.use(VueRouter);
 
@@ -13,13 +14,18 @@ const routes = [
   },
   {
     path: "/home",
-    name: "home",
+    name: "home2",
     component: Home
   },
   {
     path: "/tournaments",
     name: "Tournaments",
     component: Tournaments
+  },
+  {
+    path: "/tournamentSignUp",
+    name: "tournamentSignUp",
+    component: TournamentSignUp
   }
 ];
 

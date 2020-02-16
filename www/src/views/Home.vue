@@ -15,20 +15,22 @@
 		      <v-carousel>
 		        <v-carousel-item>
 		          <v-sheet height="100%" dark color="offWhite" tile>
-		          	<v-banner class="d-absolute mt-10 primary" style="word-break: break-word">
-					  		Men's/Women's The Ultimate Tournament Is On Pickerington&#8209;OH <br/>Feb&#8209;22
+		          	<v-banner class="primary" style="word-break: break-word">
+					  		Arch City Rumbler Pickerington&#8209;OH <br/>Feb&#8209;22
 							    <template v-slot:actions>
 							      <v-btn
 							        text
-							        color="offWhite"
+							        class="offWhite"
+							        light
 							        outlined
+							        to="tournamentSignUp"
 							      >
 							        Sign Up Now
 							      </v-btn>
 							    </template>
 							  </v-banner>
 		            <v-img
-		              src="https://dailybruin.com/images/2016/01/web.sp_.mvb_.AYeo_-640x461.jpg"
+		              src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/76267128_157403062321402_2952145173905145856_n.jpg?_nc_cat=110&_nc_ohc=U2MI6ipovigAQk3gECA_c0AvApZMLmG2JNlM4kAIkMEwv9i2kH-Z04HQw&_nc_ht=scontent-ort2-1.xx&oh=cd4b8fe621b1c6ccc08398751157550a&oe=5E66AE49"
 		              aspect-ratio="1"
 		              height="100%"
 		              width="100%"
@@ -49,7 +51,7 @@
 		    </v-col>
 		    <v-col class="pa-12" cols="12" md="6" sm="12">
 		      <h2>Columbus Coed, Mens, and Womens Volleyball.</h2>
-		      <h2>A/B/BB Tournaments.</h2>
+		      <h2>A/BB/B Tournaments.</h2>
 		      <h2>Pick-Up Play.</h2>
 		      <div>
 		        Arch City Volleyball is your one stop shop for A/BB/B volleyball in Columbus, OH. We continually host pick-up games and tournaments in the greater Columbus area. Our goal is to find and connect players in the community. <br/><br/>Create a team, find a team, or sign up as a free agent today!
