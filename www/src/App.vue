@@ -69,7 +69,7 @@
           <v-tab to="/tournaments">Tournaments</v-tab>
           <v-tab to="/freeAgent">Free Agent Sign Up</v-tab>
           <v-tab to="/pickup">Pick-Up Play</v-tab>
-          <v-tab to="/login" @click="login">Login</v-tab>
+          <v-tab @click="login">Login</v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
@@ -98,7 +98,7 @@ export default Vue.extend({
     // Log the user in
     login() {
       // @ts-ignore
-      this.$auth.loginWithRedirect();
+      this.$auth.loginWithPopup();
     },
     // Log the user out
     logout() {

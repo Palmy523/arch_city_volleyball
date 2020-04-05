@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Auth from "../views/Auth.vue";
 import Home from "../views/Home.vue";
 import Tournaments from "../views/Tournaments.vue";
 import TournamentSignUp from "../views/TournamentSignUp.vue";
