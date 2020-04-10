@@ -72,3 +72,21 @@
 		</v-sheet>
 	</v-container>
 </template>
+
+<script>
+  import contentService from '@/services/contentService';
+
+  export default {
+    name: 'Home',
+    data: () => {
+      carouselContent: []
+    },
+    created: async function() {
+      contentService.getCarouselContent().then((data) => {
+        this.carouselContent = data
+      }).catch((err) => {
+        console.error(err);
+      });
+    }
+  }
+</script>

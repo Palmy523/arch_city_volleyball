@@ -41,8 +41,10 @@ export const useAuth0 = ({
             redirectUri: process.env.VUE_APP_AUTH0_CALLBACK_URI
           }, (err: any, authResult: any) => {
             vm.authResult = authResult;
+            localStorage.setItem('auth', JSON.stringify(authResult))
             vm.webAuth.client.userInfo(vm.authResult.accessToken, function(err: any, user: any) {
               vm.user = user;
+              localStorage.setItem('authUser', JSON.stringify(user));
             });
             vm.isAuthenticated = true;
           });
